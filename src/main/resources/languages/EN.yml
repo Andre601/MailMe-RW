@@ -42,9 +42,9 @@ cmd:
     - '&7▹ &e/mailme inbox &7- Read Mail'
     - '&7▹ &e/mailme lang <token> &7- Switches Language'
     - '&7▹ &e/mailme notify <true/false> &7- Switches notification settings'
-    - "&7▹ &e/mailbox &7- Shows mailbox commands"
-    - "&7▹ &e/mailpreset &7- Shows Preset builder commands"
-    - "&7▹ &e/postoffice &7- Shows postoffice commands"
+    - '&7▹ &e/mailbox &7- Shows mailbox commands'
+    - '&7▹ &e/mailpreset &7- Shows Preset builder commands'
+    - '&7▹ &e/postoffice &7- Shows postoffice commands'
     - '&7&m--------------------------'
 
 preset-help:
@@ -69,22 +69,22 @@ mailbox-help:
   - '&7&m--------------------------'
 
 preset-creator:
-  - "&e&lMailMe"
-  - "[&7▹ &eSet Sender](suggest: /mailpreset edit sender:|hover: Click to edit)"
-  - "[&7▹ &eSet Identifier](suggest: /mailpreset edit id:|hover: Click to edit)"
-  - "[&7▹ &eSet Expiry Time (Mins)](suggest: /mailpreset edit expiry:|hover: Click to edit)"
-  - "[&7▹ &eSet Icon](command: /mailpreset edit icon|hover: Click to edit)"
-  - "[&7▹ &eSet Contents](command: /mailpreset edit contents|hover: Click to edit)"
-  - "[&7▹ &a&lComplete](command: /mailpreset complete|hover: Click to complete)"
+  - '&e&lMailMe'
+  - '[&7▹ &eSet Sender](suggest: /mailpreset edit sender:|hover: Click to edit)'
+  - '[&7▹ &eSet Identifier](suggest: /mailpreset edit id:|hover: Click to edit)'
+  - '[&7▹ &eSet Expiry Time (Mins)](suggest: /mailpreset edit expiry:|hover: Click to edit)'
+  - '[&7▹ &eSet Icon](command: /mailpreset edit icon|hover: Click to edit)'
+  - '[&7▹ &eSet Contents](command: /mailpreset edit contents|hover: Click to edit)'
+  - '[&7▹ &a&lComplete](command: /mailpreset complete|hover: Click to complete)'
 
 requires-written-book: "&e&lMailMe &7▹ &cYou need to click with a written book to compose this mail type!"
 hologram-format: "&e&l@name&e's Mailbox"
 postoffice-help:
   - '&7&m--------------------------'
   - '&e&lMailMe'
-  - "&7▹ &e/postoffice add <inbox/compose> &7- Adds a postoffice at location you're looking at. Specify type > inbox / compose"
-  - "&7▹ &e/postoffice remove &7- Removes postoffice at location you're looking at"
-  - "&7▹ &e/postoffice removeall &7- Removes all postoffices"
+  - '&7▹ &e/postoffice add <inbox/compose> &7- Adds a postoffice at location you''re looking at. Specify type > inbox / compose'
+  - '&7▹ &e/postoffice remove &7- Removes postoffice at location you''re looking at'
+  - '&7▹ &e/postoffice removeall &7- Removes all postoffices'
   - '&7&m--------------------------'
 
 postoffice:
@@ -111,10 +111,10 @@ mail-types:
 
 text:
   format:
-    -  "&7&m----------"
+    - '&7&m----------'
     - '&7Mail From: &b%sender%'
     - '&7Received at: &b%date%'
-    - "&cExpires: &n%expiry%"
+    - '&cExpires: &n%expiry%'
     - '&7Contents: %contents%'
   hover: '&cClick to Reply!'
   prev-page: '&e<<< Previous Page'
@@ -142,13 +142,13 @@ gui:
   revealed-contents:
     title: '&7From: &e&l%sender%'
     lore:
-      - "&7&m----------"
-      - "&7Type: &e%type%"
-      - "&7Received at: &e%date%"
-      - "&cExpires: &n%expiry%"
-      - "&7&m----------"
-      - "&eContents: %contents%"
-      - "&7&m----------"
+      - '&7&m----------'
+      - '&7Type: &e%type%'
+      - '&7Received at: &e%date%'
+      - '&cExpires: &n%expiry%'
+      - '&7&m----------'
+      - '&eContents: %contents%'
+      - '&7&m----------'
   filler:
     title: ''
     material: BLACK_STAINED_GLASS_PANE
@@ -169,12 +169,12 @@ gui:
     amount: 1
     custom-model-data: 0
     lore:
-      - '&7Click to go to'
-      - '&7close the menu!'
+      - '&7Click to close'
+      - '&7the menu!'
     glow: true
     skull-texture: ''
   previous-menu:
-    title: '&8[&ePrevious Page&8]'
+    title: '&8[&ePrevious Menu&8]'
     material: OAK_DOOR
     amount: 1
     custom-model-data: 0
@@ -320,7 +320,7 @@ gui:
     custom-model-data: 0
     lore:
       - '&7&nYour Inbox'
-      - '&eLeft&7 click to read'
+      - '&eLeft &7click to read'
       - '&eRight &7click to delete'
     glow: true
     skull-texture: ''
@@ -355,8 +355,8 @@ gui:
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Clicking will make you send"
-      - "&7this mail anonymously."
+      - '&7Clicking will make you send'
+      - '&7this mail anonymously.'
     glow: false
     skull-texture: ''
   are-you-sure:
@@ -378,8 +378,8 @@ gui:
     custom-model-data: 0
     glow: true
     lore:
-      - "&7Mail was deleted here"
-      - "&7Reopen the gui to see changes."
+      - '&7Mail was deleted here'
+      - '&7Reopen the gui to see changes.'
   send-from-inbox:
     title: '&e&lSend Mail'
     material: OAK_SIGN
@@ -394,6 +394,6 @@ gui:
     custom-model-data: 0
     glow: true
     lore:
-      - "&7Executes command on read"
-      - "&7Visibility: &aHidden"
-      - "&7Placeholder: &a%player_name%"
+      - '&7Executes command on read'
+      - '&7Visibility: &aHidden'
+      - '&7Placeholder: &a%player_name%'
