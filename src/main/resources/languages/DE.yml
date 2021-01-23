@@ -1,152 +1,155 @@
-# DE
+# DE (Deutsch)
+#
+# Übersetzer: Andre_601
 
+# Der Wert den Spieler verwenden um die Sprache zu ändern
 T: 'DE'
 VER: 1.2
 
 cmd:
-  mailbox-removeall: "&e&lMailMe &7▹ &aAlle Postfächer entfernt"
-  no-space: "&e&lMailMe &7▹ &cDein Inventar ist voll! Machen Sie Platz, um die Artikel zu beanspruchen."
-  not-required: "&e&lMailMe &7▹ &eNicht benötigt"
-  needs-value: "&e&lMailMe &7▹ &cSie benötigen einen Wert, z. B. key: value"
-  vault: "&e&lMailMe &7▹ &c-$@amount"
+  mailbox-removeall: "&e&lMailMe &7▹ &aAlle Briefkästen entfernt."
+  no-space: "&e&lMailMe &7▹ &cDein Inventar ist voll! Mache etwas platz um die Items zu erhalten."
+  not-required: "&e&lMailMe &7▹ &eNicht benötigt."
+  needs-value: "&e&lMailMe &7▹ &cDu benötigst einen Inhalt z.B. schlüssel:inhalt"
   generic-processing: "&e&l..."
   generic-success: "&a&l✔✔✔"
-  has-unread: "&e&lMailMe &7▹ &eSie haben ungelesene E-Mails"
-  identifiers: "&e&lMailMe &7▹ &aVoreingestellte: &7@identifiers"
+  has-unread: "&e&lMailMe &7▹ &eDu hast ungelesene Briefe!"
+  identifiers: "&e&lMailMe &7▹ &aIdentifizierer: &7@identifiers"
   reload: "&e&lMailMe &7▹ &aPlugin neu geladen."
-  default-mb-set: "&e&lMailMe &7▹ &aDeine Mailbox wurde gesetzt!"
-  no-permission: "&e&lMailMe &7▹ &cKeine Erlaubnis: &f@perm"
-  invalid-preset: "&e&lMailMe &7▹ &cUngültige voreingestellte Taste! Überprüfe deine config.yml auf gültige Werte"
-  preset-saved: "&e&lMailMe &7▹ &aVoreinstellung gespeichert."
-  id-taken: "&e&lMailMe &7▹ &cVoreingestellter Token bereits vergeben."
-  preset-error: "&e&lMailMe &7▹ &cMail Preset hat einen Fehler erzeugt."
-  missing-params-preset: "&e&lMailMe &7▹ &cFehlende Parameter für Preset Builder!"
+  default-mb-set: "&e&lMailMe &7▹ &aStandart-Briefkasten gesetzt!"
+  no-permission: "&e&lMailMe &7▹ &cDu hast ungenügende Berechtigungen! Benötigte Berechtigung: &f@perm"
+  invalid-preset: "&e&lMailMe &7▹ &cVorlage ist ungültig oder existiert nicht (Beachte Gross-/Kleinschribung)."
+  preset-saved: "&e&lMailMe &7▹ &aVorlage gespeichert."
+  id-taken: "&e&lMailMe &7▹ &cID der Vorlage ist bereits vergeben."
+  preset-error: "&e&lMailMe &7▹ &cEin Fehler ist mit der Vorlage aufgetreten."
+  missing-params-preset: "&e&lMailMe &7▹ &cFehlende Parameter für Vorlage-Ersteller!"
   unknown-argument: "&e&lMailMe &7▹ &cUnbekanntes Argument!"
-  must-create-preset-first: "&e&lMailMe &7▹ &cSie müssen zuerst / mailpreset create ausführen!"
-  vault-insufficient-funds: '&e&lMailMe &7▹ &cUnzureichende Mittel!'
-  unknown-player: "&e&lMailMe &7▹ &cUnbekannter Spieler oder Spieler ist noch nicht beigetreten!"
+  must-create-preset-first: "&e&lMailMe &7▹ &cDu musst zuerst '/mailpreset create' ausführen!"
+  vault-insufficient-funds: '&e&lMailMe &7▹ &cUngenügendes Guthaben!'
+  vault: "&e&lMailMe &7▹ &c-$@amount"
+  unknown-player: "&e&lMailMe &7▹ &cUnbekannter Spieler oder der Spieler war zuvor noch nie Online!"
   delete:
-    success: "&e&lMailMe &7▹ &aErfolgreich gelöscht"
-    failure: "&e&lMailMe &7▹ &cFehler beim Löschen."
+    success: "&e&lMailMe &7▹ &aErfolgreich gelöscht."
+    failure: "&e&lMailMe &7▹ &cLöschen fehlgeschlagen."
   notify:
-    success: "&e&lMailMe &7▹ &aNotification settings updated!"
-    failure: "&e&lMailMe &7▹ &cUngültiges Argument! Muss wahr oder falsch sein."
+    success: "&e&lMailMe &7▹ &aBenachrichtigungseinstellungen aktualisiert!"
+    failure: "&e&lMailMe &7▹ &cUngültiges Argument! Muss entweder 'true' oder 'false' sein."
   lang:
-    failure: "&e&lMailMe &7▹ &cSprach-Token existiert nicht!"
-    success: "&e&lMailMe &7▹ &aSprache geändert!"
+    failure: "&e&lMailMe &7▹ &cSprache existiert nicht!"
+    success: "&e&lMailMe &7▹ &aSprache erfolgreich geändert!"
   help:
     - '&7&m--------------------------'
     - '&e&lMailMe'
-    - '&7▹ &e/mailme compose &7- Eine Nachricht senden'
-    - '&7▹ &e/mailme inbox &7- Deine Nachrichten lesen'
+    - '&7▹ &e/mailme compose &7- Erstelle und sende einen Brief'
+    - '&7▹ &e/mailme inbox &7- Briefe lesen'
     - '&7▹ &e/mailme lang <token> &7- Sprache ändern'
     - '&7▹ &e/mailme notify <true/false> &7- Benachrichtigungseinstellungen ändern'
-    - "&7▹ &e/mailbox &7- Zeigt Postfachbefehle an"
-    - "&7▹ &e/mailpreset &7- Displays Preset Builder commands"
-    - "&7▹ &e/postoffice &7- Zeigt Postoffice-Befehle an"
+    - "&7▹ &e/mailbox &7- Zeigt Briefkasten Befehle"
+    - "&7▹ &e/mailpreset &7- Zeigt Vorlage Befehle"
+    - "&7▹ &e/postoffice &7- Zeigt Postamt Befehle"
     - '&7&m--------------------------'
 
 preset-help:
   - '&7&m--------------------------'
   - '&e&lMailMe'
   - '&7▹ &e/mailpreset help &7- Hilfemenü'
-  - '&7▹ &e/mailpreset create &7- Beginnen Sie mit der Erstellung des Presets'
-  - '&7▹ &e/mailpreset edit &7- Editor für Voreinstellung anzeigent'
-  - "&7▹ &e/mailpreset give <player> <presetId> &7- Geben Sie dem Spieler eine Voreinstellung"
-  - '&7▹ &e/mailpreset complete &7- Komplett'
-  - '&7▹ &e/mailpreset delete <id> &7- Löschen'
+  - '&7▹ &e/mailpreset create &7- Beginne das erstellen einer Vorlage'
+  - '&7▹ &e/mailpreset edit &7- Zeige Editor für Vorlage'
+  - "&7▹ &e/mailpreset give <player> <presetId>"
+  - '&7▹ &e/mailpreset complete &7- Vervollständige deine Vorlage'
+  - '&7▹ &e/mailpreset delete <id> &7- Vorlage löschen'
   - '&7&m--------------------------'
 
 mailbox-help:
   - '&7&m--------------------------'
   - '&e&lMailMe'
   - '&7▹ &e/mailbox help &7- Hilfemenü'
-  - '&7▹ &e/mailbox add '
-  - '&7▹ &e/mailbox remove '
-  - '&7▹ &e/mailbox find &7- Findet in der Nähe Postfächer'
-  - '&7▹ &e/mailbox setdefault &7- Setzt die Standart Mailbox'
+  - '&7▹ &e/mailbox add &7- Einen Briefkasten hinzufügen'
+  - '&7▹ &e/mailbox remove &7- Einen Briefkasten entfernen'
+  - '&7▹ &e/mailbox find &7- Zeige Partikel in der nähe von Briefkästen'
+  - '&7▹ &e/mailbox setdefault &7- Setzt einen universel verfügbaren Briefkasten'
   - '&7&m--------------------------'
 
 preset-creator:
   - "&e&lMailMe"
-  - "[&7▹ &eEinstellen Absender](suggest: /mailpreset edit sender:|hover: Zum Bearbeiten anklicken)"
-  - "[&7▹ &eEinstellen Kennung](suggest: /mailpreset edit id:|hover: Zum Bearbeiten anklicken)"
-  - "[&7▹ &eEinstellen Ablaufdatum (Mins)](suggest: /mailpreset edit expiry:|hover: Zum Bearbeiten anklicken)"
-  - "[&7▹ &eEinstellen Symbol](command: /mailpreset edit icon|hover: Zum Bearbeiten anklicken)"
-  - "[&7▹ &eEinstellen Inhalt](command: /mailpreset edit contents|hover: Zum Bearbeiten anklicken)"
-  - "[&7▹ &a&lKomplett](command: /mailpreset complete|hover: Zum Bearbeiten anklicken)"
+  - "[&7▹ &eSet Sender](suggest: /mailpreset edit sender:|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &eSet Identifier](suggest: /mailpreset edit id:|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &eSet Expiry Time (Mins)](suggest: /mailpreset edit expiry:|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &eSet Icon](command: /mailpreset edit icon|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &eSet Contents](command: /mailpreset edit contents|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &a&lComplete](command: /mailpreset complete|hover: Klicke zum beenden)"
 
-requires-written-book: "&e&lMailMe &7▹ &cSie müssen mit einem geschriebenen Buch klicken, um diese Art von Mail zu verfassen!"
-hologram-format: "&e&l@name&e's MB"
+requires-written-book: "&e&lMailMe &7▹ &cDu musst mit einem Beschriebenen Buch klicken um diesen Brieftyp zu verwenden!"
+hologram-format: "&e&l@name&e's Briefkasten"
 postoffice-help:
   - '&7&m--------------------------'
   - '&e&lMailMe'
-  - "&7▹ &e/postoffice add <inbox/compose> &7- Fügt ein Postoffice an dem Ort hinzu, den Sie suchen."
-  - "&7▹ &e/postoffice remove &7- Entfernt das Postoffice an dem Ort, den Sie suchen"
+  - "&7▹ &e/postoffice add <inbox/compose> &7- Fügt ein Postamt an die von dir betrachtete Position hinzu. Typ angeben > inbox / compose"
+  - "&7▹ &e/postoffice remove &7- Entfernt ein Postamt von der von dir betrachteten Position"
   - "&7▹ &e/postoffice removeall &7- Entfernt alle Postämter"
   - '&7&m--------------------------'
 
 postoffice:
-  add: "&e&lMailMe &7▹ &aPost vor Ort hinzugefügt!"
-  removed: "&e&lMailMe &7▹ &aPost vor Ort entfernt!"
+  add: "&e&lMailMe &7▹ &aPostamt bei Position hinzugefügt!"
+  removed: "&e&lMailMe &7▹ &aPostamt von Position entfernt!"
   cleared: "&e&lMailMe &7▹ &aAlle Postämter entfernt!"
-  no-po-here: "&e&lMailMe &7▹ &cAn diesem Ort gibt es kein Postamt!"
-  bad-material: "&e&lMailMe &7▹ &cMaterial kann nicht LUFT sein!"
+  no-po-here: "&e&lMailMe &7▹ &cEs gibt kein Postamt an dieser Position!"
+  bad-material: "&e&lMailMe &7▹ &cMaterial darf nicht Luft sein!"
 
 mailbox:
-  limit-reached: "&e&lMailMe &7▹ &cYou've reached the maximum amount of mailboxes you can own!"
-  invalid-item: "&e&lMailMe &7▹ &cDeine Mailbox muss eine Truhe sein!"
-  location-occupied: "&e&lMailMe &7▹ &cZu diesem Zeitpunkt gibt es bereits eine Mailbox!"
-  placement-success: "&e&lMailMe &7▹ &aDeine Mailbox wurde gesetzt!"
-  no-mailbox-here: "&e&lMailMe &7▹ &cEs gibt kein Postfach, das der Position entspricht, die Sie suchen.!"
-  location-removed: "&e&lMailMe &7▹ &aDeine Mailbox wurde entfernt!"
-  highlighted: "&e&lMailMe &7▹ &ePostfächer, die im Radius hervorgehoben sind."
+  limit-reached: "&e&lMailMe &7▹ &cDu hast die maximale anzahl an Briefkästen, die du besitzen darfst erreicht!"
+  invalid-item: "&e&lMailMe &7▹ &cDein Briefkasten darf nicht dieser Blocktyp sein!"
+  location-occupied: "&e&lMailMe &7▹ &cEs existiert bereits ein Briefkasten an dieser Position!"
+  placement-success: "&e&lMailMe &7▹ &aBriefkasten Position hinzugefügt!"
+  no-mailbox-here: "&e&lMailMe &7▹ &cEs gibt keinen Briefkasten hier zum entfernen!"
+  location-removed: "&e&lMailMe &7▹ &aBriefkasten Position entfernt!"
+  highlighted: "&e&lMailMe &7▹ &eBrifkästen werden hervorgehoben, wenn welche in der nähe sind."
 
 mail-types:
   message: Nachricht
   item: Item
   book: Buch
-  console: 'Konsole'
+  console: 'Konsohlenbefehl'
 
 text:
   format:
     -  "&7&m----------"
-    - '&7Nachricht von: &b%sender%'
-    - '&7Erhalten am: &b%date%'
+    - '&7Brief von: &b%sender%'
+    - '&7Erhaltem am: &b%date%'
     - "&cLäuft ab: &n%expiry%"
-    - '&7Inhalt: %contents%'
-  hover: "&cKlicke zum Antworten!"
-  prev-page: "&e<<< Vorherige Seite"
-  prev-page-hover: "&cKlicke für die vorherige Seite!"
-  next-page: "&eNächste Seite >>>"
-  next-page-hover: "&cKlicke für die nächste Seite!"
+    - '&7Inhalte: %contents%'
+  hover: '&cKlicke zum antworten!'
+  prev-page: '&e<<< Vorherige Seite'
+  prev-page-hover: '&cKlicke für die vorherige Seite!'
+  next-page: '&eNächste Seite >>>'
+  next-page-hover: '&cKlicke für die nächste Seite!'
 
 mail:
-  console: "Geben Sie den Befehl ein, der beim Lesen ausgeführt werden soll."
+  console: "Gib den Befehl ein, welcher beim lesen ausgeführt werden soll."
   message-contents: "&e&l%sender% &7▹ &e%contents%"
-  message: "Was soll die Nachricht sagen?"
-  sent: "&e&lMailMe &7▹ &a&eDu hast eine Nachricht von %s erhalten"
-  received: "&e&lMailMe &7▹ Mail erhalten"
-  anonymous: "Anonym"
+  message: "Was soll der Brief enthalten?"
+  sent: "&e&lMailMe &7▹ &aBrief erfolgreich abgeschickt."
+  received: "&e&lMailMe &7▹ Du hast Post erhalten!"
+  anonymous: "Unbekannt"
 
 gui:
-  search: "Schreibe den Namen des Spielers, welchen du gerne finden willst"
+  search: "Schreibe den Namen des Spielers, welchen du gerne finden willst. Dieser kann online oder offline sein."
   titles:
-    click-to-send: "Klicken Sie zum Senden"
-    choose-type: "Wählen Sie Mail-Typ"
-    icon-selector: "Wählen Sie ein Symbol!"
-    recipient-selector: "Empfänger wählen"
-    inbox: "Nachricht lesen"
-    item-input: "Items zum senden einfügen"
+    click-to-send: "Klicke zum senden"
+    choose-type: "Wähle Brieftyp"
+    icon-selector: "Setze ein Icon!"
+    recipient-selector: "Wähle deine Empfänger"
+    inbox: "Deine Posteingang"
+    item-input: "Füg deine Items ein"
   revealed-contents:
-    title: '&7From: &e&l%sender%'
+    title: '&7Von: &e&l%sender%'
     lore:
       - "&7&m----------"
-      - "&7Art: &e%type%"
+      - "&7Typ: &e%type%"
       - "&7Erhalten am: &e%date%"
-      - "&cErhalten am: &n%expiry%"
+      - "&cLäuft ab: &n%expiry%"
       - "&7&m----------"
-      - "&eInhalt: %contents%"
+      - "&eInhalte: %contents%"
       - "&7&m----------"
   filler:
     title: ''
@@ -156,159 +159,162 @@ gui:
     glow: false
     lore: []
   item-input-title:
-    title: '&e&lEingabeelemente'
+    title: '&e&lFüg deine Items ein'
     material: OAK_SIGN
     amount: 1
     custom-model-data: 0
     glow: false
     lore: []
   close-menu:
-    title: "&8[&eSeite verlassen&8]"
+    title: '&cMenü schliessen'
     material: BARRIER
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke um das"
-      - "&7GUI zu schliessen!"
+      - '&7Klicke um das'
+      - '&7Menü zu schliessen!'
     glow: true
-    skull-texture: ""
+    skull-texture: ''
   previous-menu:
-    title: '&8[&eVorherige Seite&8]'
+    title: '&8[&eVorheriges Menü&8]'
     material: OAK_DOOR
     amount: 1
     custom-model-data: 0
-    lore: []
+    lore:
+      - '&7Klicke um zum vorherigen'
+      - '&7Menü zu gelangen!'
     glow: true
     skull-texture: ''
   previous-page:
-    title: "&8[&eVorige Seite&8]"
+    title: '&8[&eVorherige Seite&8]'
     material: REDSTONE_TORCH
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke um zur vorigen"
-      - "&7Seite zu gelangen!"
+      - '&7Klicke um zur vorherigen'
+      - '&7Seite zu gelangen!'
     glow: true
-    skull-texture: ""
+    skull-texture: ''
   next-page:
-    title: "&8[&eNächste Seite&8]"
+    title: '&8[&eNächste Seite&8]'
     material: REDSTONE_TORCH
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke um zur nächsten"
-      - "&7Seite zu gelangen!"
+      - '&7Klicke um zur nächsten'
+      - '&7Seite zu gelangen!'
     glow: true
-    skull-texture: ""
+    skull-texture: ''
   message:
-    title: "&8[&eTextnachricht&8]"
+    title: '&8[&eNachrichten Brief&8]'
     material: OAK_SIGN
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke um jemandem eine"
-      - "&7Textnachricht zu senden!"
+      - '&7Klicke um jemanden eine'
+      - '&7Nachriht als Brief zu senden!'
     glow: true
     skull-texture: ''
   item:
-    title: "&8[&eItem Nachricht&8]"
+    title: '&8[&eItem Brief&8]'
     material: CHEST
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke um jemandem eine"
-      - "&7Item Nachricht zu senden!"
+      - '&7Klicke um jemanden ein'
+      - '&7Item als Brief zu senden!'
     glow: true
     skull-texture: ''
   book:
-    title: '&8[&eBuch&8]'
+    title: '&8[&eBuch Brief&8]'
     material: WRITTEN_BOOK
     amount: 1
     custom-model-data: 0
     lore:
-      - '&e&lKlicken Sie mit einem geschriebenen Buch'
-      - '&e&ldamit Mail schreiben!'
+      - '&e&lKlicke mit einem beschriebenen'
+      - '&e&lBuch um einen Brief damit zu'
+      - '&e&lverfassen!'
     glow: true
     skull-texture: ''
   icon-custom:
-    title: "&8[&cBenutzerdefiniert&8]"
+    title: '&8[&cBenutzerdefiniert&8]'
     material: YELLOW_STAINED_GLASS_PANE
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke mit einem Item um es als"
-      - "&7Icon zu setzten."
-      - "&7Du wirst das Item nicht verlieren."
+      - '&7Klicke mit einem Item um es'
+      - '&7als Icon zu setzen.'
+      - '&7Du wirst dieses Item nicht verlieren.'
     glow: true
-    skull-texture: ""
+    skull-texture: ''
   search-players:
-    title: "&8[&eSuchen&8]"
+    title: '&8[&eSuche&8]'
     material: FEATHER
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke um per"
-      - "&7Spielername zu suchen!"
+      - '&7Klicke zum suchen nach'
+      - '&7Spielername!'
     glow: true
     skull-texture: ''
   remove-filters:
-    title: "&8[&dFilter entfernen&8]"
+    title: '&8[&dFilter entfernen&8]'
     material: IRON_BARS
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke um sämtliche Filter"
-      - "&7im Menu zu entfernen!"
+      - '&7Klicke um jegliche Filter'
+      - '&7vom Menü zu entfernen!'
     glow: true
-    skull-texture: ""
+    skull-texture: ''
   read-as-text:
-    title: "&8[&eAls Text lesen&8]"
+    title: '&8[&eAls Text lesen&8]'
     material: MAP
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicke um deine Nachricht"
-      - "&7als Text zu lesen."
+      - '&7Klicke um deinen Brief'
+      - '&7als Text zu lesen'
     glow: true
-    skull-texture: ""
+    skull-texture: ''
   filter-unread:
-    title: '&8[&eFilter ungelesen&8]'
+    title: '&8[&eUngelesene Filtern&8]'
     material: BOOK
     amount: 1
     custom-model-data: 0
     lore:
-      - '&7Klicken Sie hier, um Ihre zu filtern'
-      - '&7Mail nur an ungelesene'
+      - '&7Klicke um deine Briefe nur nach'
+      - '&7ungelesenen zu filtern'
     glow: true
     skull-texture: ''
   next-menu:
-    title: '&a&lKlicken Sie für das nächste Menü!'
+    title: '&a&lKlicke für das nächste Menü!'
     material: EMERALD_BLOCK
     amount: 1
     custom-model-data: 0
     lore:
-      - '&7Klicken Sie, um zu gehen'
-      - '&7das nächste Menü'
+      - '&7Klicke um zum nächsten'
+      - '&7Menü zu gelangen'
     glow: true
     skull-texture: ''
   expand:
-    title: '&e&lZum erweitern klicken!'
+    title: '&e&lKlicke zum erweitern!'
     material: CHEST
     amount: 1
     custom-model-data: 0
     lore:
-      - '&7Klicken Sie hier, um eine größere zu erhalten'
-      - '&7Ansicht des Menüs'
+      - '&7Klicke um eine grössere'
+      - '&7Ansicht des Menüs zu erhalten'
     glow: true
     skull-texture: ''
   collapse:
-    title: '&e&lKlicken Sie zum Reduzieren!'
+    title: '&e&lKlicke zum verkleinern!'
     material: CHEST
     amount: 1
     custom-model-data: 0
     lore:
-      - '&7Click to compress the'
-      - '&7Ansicht des Menüs'
+      - '&7Klicke um das Menü'
+      - '&7zu verkleinern'
     glow: true
     skull-texture: ''
   inbox:
@@ -317,9 +323,9 @@ gui:
     amount: 1
     custom-model-data: 0
     lore:
-      - '&7&nPosteingang'
-      - '&eKlicken Sie mit der linken Maustaste, um zu lesen'
-      - '&eRechtsklick zum Löschen'
+      - '&7&nDein Posteingang'
+      - '&eLinksklick &7zum lesen'
+      - '&eRechtsklick &7zum löschen'
     glow: true
     skull-texture: ''
   send-to-mailbox:
@@ -336,11 +342,11 @@ gui:
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Klicken Sie zum Senden"
+      - "&7Klicke zum senden"
     glow: false
     skull-texture: ''
   sent:
-    title: '&a&lGeschickt'
+    title: '&a&lGesendet'
     material: GREEN_STAINED_GLASS_PANE
     amount: 1
     custom-model-data: 0
@@ -348,13 +354,13 @@ gui:
     glow: false
     skull-texture: ''
   anonymous:
-    title: '&eKlicken Sie hier, um anonym zu bleiben'
+    title: '&eKlicke um anonym zu bleiben'
     material: OAK_SIGN
     amount: 1
     custom-model-data: 0
     lore:
-      - "&7Durch Klicken auf werden Sie senden"
-      - "&7diese Mail anonym."
+      - "&7Das anklicken wird diesen Brief"
+      - "&7anonym versenden."
     glow: false
     skull-texture: ''
   are-you-sure:
@@ -364,34 +370,36 @@ gui:
     custom-model-data: 0
     glow: true
     lore:
-      - '&7Klicken Sie erneut mit der rechten Maustaste'
-      - '&7 Löschen Sie diese Mail'
-      - ''
-      - '&7Alternativ können Sie mit der linken Maustaste darauf klicken'
-      - '&7Brechen Sie den Vorgang ab'
-  send-from-inbox:
-    title: '&e&lMail senden'
-    material: OAK_SIGN
-    amount: 1
-    custom-model-data: 0
-    glow: true
-    lore: []
+      - "&7Erneuter Rechtsklick wird"
+      - "&7diesen Brief löschen"
+      - ""
+      - "&7Alternativ kannst du auch"
+      - "&7linksklicken um diese Aktion"
+      - "&7abzubrechen."
   deleted:
-    title: '&c[&fgelöscht&c]'
+    title: '&c[&fGelöscht&c]'
     material: REDSTONE_BLOCK
     amount: 1
     custom-model-data: 0
     glow: true
     lore:
-      - "&7Mail wurde hier gelöscht"
-      - "&7Öffnen Sie die GUI erneut, um Änderungen zu sehen."
+      - "&7Brief wurde gelöscht."
+      - "&7Öffne das GUI erneut um die Änderungen"
+      - "&7zu sehen."
+  send-from-inbox:
+    title: '&e&lBrief senden'
+    material: OAK_SIGN
+    amount: 1
+    custom-model-data: 0
+    glow: true
+    lore: []
   console:
-    title: '&e&lKonsolenbefehl'
+    title: '&e&lKonsohlenbefehl'
     material: COMMAND_BLOCK
     amount: 1
     custom-model-data: 0
     glow: true
     lore:
-      - "&7Führt den Befehl beim Lesen aus"
-      - "&7Sichtweite: &aVersteckt"
+      - "&7Führt einen Befehl beim lesen aus"
+      - "&7Sichtbarkeit: &aVersteckt"
       - "&7Platzhalter: &a%player_name%"
