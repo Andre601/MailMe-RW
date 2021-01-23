@@ -72,12 +72,12 @@ mailbox-help:
 
 preset-creator:
   - "&e&lMailMe"
-  - "[&7▹ &eSet Sender](suggest: /mailpreset edit sender:|hover: Klicke zum bearbeiten)"
-  - "[&7▹ &eSet Identifier](suggest: /mailpreset edit id:|hover: Klicke zum bearbeiten)"
-  - "[&7▹ &eSet Expiry Time (Mins)](suggest: /mailpreset edit expiry:|hover: Klicke zum bearbeiten)"
-  - "[&7▹ &eSet Icon](command: /mailpreset edit icon|hover: Klicke zum bearbeiten)"
-  - "[&7▹ &eSet Contents](command: /mailpreset edit contents|hover: Klicke zum bearbeiten)"
-  - "[&7▹ &a&lComplete](command: /mailpreset complete|hover: Klicke zum beenden)"
+  - "[&7▹ &eSetze Sender](suggest: /mailpreset edit sender:|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &eSetze Identifizierer](suggest: /mailpreset edit id:|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &eSetze Ablaufzeit (Min)](suggest: /mailpreset edit expiry:|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &eSetze Icon](command: /mailpreset edit icon|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &eSetze Inhalte](command: /mailpreset edit contents|hover: Klicke zum bearbeiten)"
+  - "[&7▹ &a&lFertigstellen](command: /mailpreset complete|hover: Klicke zum fertigstellen)"
 
 requires-written-book: "&e&lMailMe &7▹ &cDu musst mit einem Beschriebenen Buch klicken um diesen Brieftyp zu verwenden!"
 hologram-format: "&e&l@name&e's Briefkasten"
